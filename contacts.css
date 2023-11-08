@@ -1,0 +1,183 @@
+*{
+    font-family: Arial;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 242px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+
+}
+
+.content{
+    text-align: center;
+
+}
+
+.content h1{
+    font-size: 162px;
+    color: #ffffffc5;
+    font-weight: 600;
+    font-family: 'Londrina Outline', serif;
+}
+
+.content p{
+    margin-top: -140px;
+    font-size: 56px;
+    color: #FFCDCD;
+    font-weight: 400;
+    font-family: 'Permanent Marker', serif;
+
+}
+
+.background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bg{
+    position: relative;
+    background: #1B1A1A;
+    height: 10vh;
+    margin-top: 50px;
+}
+
+.extend{
+    z-index: -1;
+    background: #151515;
+    height: 100vh;
+}
+
+h1{
+    color: #fff;
+}
+
+form{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 5%;
+    max-width: 1440px;
+    width: 90%;
+    background: #1B1A1A;
+    padding: 40px;
+    border: 3px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+    color: #fff;
+}
+
+input{
+    background-color: #1B1A1A;
+}
+
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    background-color: #1B1A1A;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+    color: #fff;
+}
+
+input[type="text"]:focus, textarea:focus{
+    border-bottom: 1px solid #fff;
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: #1B1A1A;
+}
+
+.center{
+    text-align: center;
+}
+.center p{
+    margin-top: 28px;
+}
+
+input[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: #fff;
+    color: #1B1A1A;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.error{
+    color: red;
+}
+
+.error-border{
+    border-bottom: 1px solid red;
+}
+
+#success{
+    color: green;
+}

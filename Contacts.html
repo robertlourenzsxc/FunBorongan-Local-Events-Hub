@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Londrina+Outline&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="design.css">
+    <title>CONTACT</title>
+</head>
+<body>
+    <div class="hero">
+
+        <video autoplay loop muted plays-inline class="background">
+            <source src="images-and-videos/official.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+            <a href="Homepage.html"><img src="images-and-videos/Logo.svg" class="logo"></a>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>UTOPIA</h1>
+            <p>UPCOMING EVENT</p>
+        </div>
+    </div>
+
+    <section class="bg">
+    <div class="extend">
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>CONTACT US! </h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your Email">
+            <small class="error"></small>
+
+            <label for="message">Message:</label>
+            <textarea id="message" id="name" placeholder="Your Message" rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <h3>FUNBORONGAN Local Events Hub</h3>
+        <p>FOLLOW OUR SOCIALS!</p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/borongancityinfo"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
+  </footer>
+
+<script src="animate.js"></script>
+</body>
+</html>
